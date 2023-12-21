@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+
+.main-footer{
+  color:white;
+  background-color: #333;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width:100%;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap{
+  flex:1;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if they don't fit */
+  justify-content: space-between; /* Distribute items along the row with equal space between them */
+}
+
+.col {
+  flex: 0 0 30%;
+  line-height: 30px;
+} 
+
+/* Add some styling to the columns */
+.col h4 {
+  margin-bottom: 1rem;
+}
+
+.col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.col li {
+  margin-bottom: 0.8rem;
+}
+
+/* Add some space above the copyright text */
+.row p {
+  margin-top: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

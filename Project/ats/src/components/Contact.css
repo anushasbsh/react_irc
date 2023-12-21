@@ -1,0 +1,902 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+
+.contimg {
+  width: 30%;
+  margin-top: 0;
+  
+}
+
+.contimg img {
+  width: 350%; /* Ensure the image takes the full width of its container */
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in-out forwards;
+  padding-bottom: 100%; /* Optional: Add border-radius for rounded corners */
+}
+.mapimg img {
+  width: 100%; /* Set the image width to 100% of its container */
+  border-radius: 10px;
+  display: block; /* Ensure the image behaves as a block element */
+}
+
+.mapimg {
+  margin-top: -25%;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+
+/* Add the following styles to your existing CSS file */
+
+/* Common styles for all sp1 to sp7 */
+.cnt1 .sp1,
+.cnt2 .sp2,
+.cnt3 .sp3,
+.cnt4 .sp4,
+.cnt5 .sp5,
+.cnt6 .sp6,
+.cnt7 .sp7 {
+  position: relative; /* Add position relative to the container */
+}
+
+/* Box shadow for all images */
+.cnt1 .sp1 img,
+.cnt2 .sp2 img,
+.cnt3 .sp3 img,
+.cnt4 .sp4 img,
+.cnt5 .sp5 img,
+.cnt6 .sp6 img,
+.cnt7 .sp7 img {
+  width: 100%; /* Ensure the image takes the full width of its container */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  box-shadow: 10px 8px 64px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease,transform 0.3s ease;
+}
+
+/* Hover effect for all images */
+.cnt1 .sp1 img:hover,
+.cnt2 .sp2 img:hover,
+.cnt3 .sp3 img:hover,
+.cnt4 .sp4 img:hover,
+.cnt5 .sp5 img:hover,
+.cnt6 .sp6 img:hover,
+.cnt7 .sp7 img:hover {
+  box-shadow: 0px 25px 64px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02); /* Stronger box shadow on hover */
+}
+
+.cnt1 .sp1 img:active,
+.cnt2 .sp2 img:active,
+.cnt3 .sp3 img:active,
+.cnt4 .sp4 img:active,
+.cnt5 .sp5 img:active,
+.cnt6 .sp6 img:active,
+.cnt7 .sp7 img:active {
+  transform: scale(0.9); /* Scale down the image on click */
+  transition: transform 0.1s ease; /* Smooth transition for click effect */
+}
+
+.contactButton{
+  margin-left: 747px;
+  position: absolute;
+  margin-top: -900px;
+  background-color: #4c00b4;
+  color: white;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+  border: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top:15px;
+  padding-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.contactButton:hover {
+  background-color: #fff;
+}
+
+.map-and-contact-container {
+  display: flex;
+  justify-content: center; /* Adjust as needed */
+  align-items: center; 
+  margin-right: 70px;
+  margin-bottom: 100px;
+}
+
+/* Map image styles */
+.mapimg {
+  width: 45%; /* Adjust the width of the map image */
+  margin-left: 400px;
+  padding-right:70px ;
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  /* Other styles for map image */
+}
+
+.--text-center{
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: #4c00b4;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+ 
+}
+
+.--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  margin-left: 300px;
+  background-color: #4c00b4;
+  color:#fff;
+  border: none;
+}
+
+.--btn:hover {
+  background-color: #fff;
+  color: #4c00b4;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.raleway-input {
+  font-family: "Raleway", sans-serif;
+  border-radius: 1px;
+  padding: 10px;
+  margin-left: 110px;
+  margin-right: 200px;
+  margin-bottom: 20px; /* Add some vertical spacing between input fields */
+  width: 70%;
+  gap:100px;
+  box-sizing: border-box;
+  border: #424142;
+  background-color: #f6f6f6; /* Ensure padding and border are included in the width */
+}
+
+
+.mapimg img {
+  width: 100%;
+  border-radius: 10px;
+  margin-left: 0;
+  display: block;
+}
+
+
+
+.let1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  margin-left: 30%;
+  padding-top: 0;
+  margin-top: 0;
+  width: 80%; 
+  height: 40vh;
+  font-size: 12px;
+  opacity: 0;
+  animation: fadeInFromRight 1s ease-in-out forwards;
+}
+@keyframes fadeInFromRight {
+from {
+  opacity: 0;
+  transform: translateX(20px); /* Move in from the right */
+}
+to {
+  opacity: 1;
+  transform: translateX(0); /* Reach its final position */
+}
+}
+.par1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color:#333;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 3%;
+  width: 40%; 
+  height: 57vh;
+  font-size: 20px;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeInFromRight 1s ease-in-out forwards;
+}
+
+/* Add the following to your existing CSS file */
+
+.par1 p1 {
+white-space: pre-line;
+}
+
+.pi11{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-family: "Raleway", sans-serif;
+color:#424142;
+position: absolute;
+margin-left: 45%;
+margin-top: 0;
+padding-top: 0%;
+width: 50%; 
+height: 57vh;
+font-size: 20px;
+letter-spacing: 1px;
+opacity: 0;
+animation: fadeInFromRight 1s ease-in-out forwards;
+}
+
+
+.sp1 {
+  width: 30%;
+  margin-left: 100px;
+  padding-bottom: 500px;
+  
+  margin-bottom: 10px;
+  animation: fadeInFromLeft 1s ease-in-out forwards;
+}
+
+@keyframes fadeInFromLeft{
+  from {
+    opacity: 0;
+    transform: translateX(-20px); /* Move in from the right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Reach its final position */
+    }  }
+    .sp1 {
+        width: 40%;
+        margin-left: 150px; /* Adjust the width of the side image */
+        padding-bottom: 50px;
+        margin-top: 100px; /* Adjust the vertical position */
+      }
+      
+      .sp1 img {
+        width: 100%; /* Ensure the image takes the full width of its container */
+        border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+      }
+      
+
+  
+.let2{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  margin-left: 280px;
+  padding-top: 0;
+  margin-top: 0;
+  width: 80%; 
+  height: 40vh;
+  
+  font-size: 12px;
+  opacity: 0;
+  animation: fadeInFromRight 1s ease-in-out forwards;
+}
+@keyframes fadeInFromRight {
+from {
+  opacity: 0;
+  transform: translateX(20px); /* Move in from the right */
+}
+to {
+  opacity: 1;
+  transform: translateX(0); /* Reach its final position */
+}
+}
+.par2{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color:#333;
+  position: absolute;
+  padding-top: 10px;
+  margin-left: 300px;
+  margin-top: 3%;
+  width: 40%; 
+  height: 57vh;
+  font-size: 20px;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeInFromRight 1s ease-in-out forwards;
+}
+
+/* Add the following to your existing CSS file */
+
+.par2 .p2{
+white-space: pre-line;
+}
+
+.pi22{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-family: "Raleway", sans-serif;
+color:#424142;
+position: absolute;
+margin-left: 30px;
+margin-top: 0;
+padding-top: 0%;
+width: 50%; 
+height: 57vh;
+font-size: 20px;
+letter-spacing: 1px;
+opacity: 0;
+animation: fadeInFromRight 1s ease-in-out forwards;
+}
+
+
+.sp2 {
+  width: 30%;
+  margin-left: 100px;
+  padding-bottom: 500px;
+  margin-bottom: 10px;
+  animation: fadeInFromLeft 1s ease-in-out forwards;
+}
+
+@keyframes fadeInFromLeft{
+  from {
+    opacity: 0;
+    transform: translateX(-20px); /* Move in from the right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Reach its final position */
+    }  }
+    .sp2{
+        width: 40%;
+        margin-left: 50%; /* Adjust the width of the side image */
+        padding-bottom: 50px;
+        margin-top: 100px; /* Adjust the vertical position */
+      }
+      
+      .sp2 img {
+        width: 100%; /* Ensure the image takes the full width of its container */
+        border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+      }
+      
+ 
+.let3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  margin-left: 30%;
+  padding-top: 0;
+  margin-top: 0;
+  width: 80%; 
+  height: 40vh;
+  font-size: 12px;
+  opacity: 0;
+  animation: fadeInFromRight 1s ease-in-out forwards;
+}
+@keyframes fadeInFromRight {
+from {
+  opacity: 0;
+  transform: translateX(20px); /* Move in from the right */
+}
+to {
+  opacity: 1;
+  transform: translateX(0); /* Reach its final position */
+}
+}
+.par3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color:#333;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 3%;
+  width: 40%; 
+  height: 57vh;
+  font-size: 20px;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeInFromRight 1s ease-in-out forwards;
+}
+
+
+.par3 p3 {
+white-space: pre-line;
+}
+
+.pi33{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-family: "Raleway", sans-serif;
+color:#424142;
+position: absolute;
+margin-left: 45%;
+margin-top: 0;
+padding-top: 0%;
+width: 50%; 
+height: 57vh;
+font-size: 20px;
+letter-spacing: 1px;
+opacity: 0;
+animation: fadeInFromRight 1s ease-in-out forwards;
+}
+
+
+.sp3 {
+  width: 30%;
+  margin-left: 100px;
+  padding-bottom: 500px;
+  
+  margin-bottom: 10px;
+  animation: fadeInFromLeft 1s ease-in-out forwards;
+}
+
+@keyframes fadeInFromLeft{
+  from {
+    opacity: 0;
+    transform: translateX(-20px); /* Move in from the right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Reach its final position */
+    }  }
+    .sp3 {
+        width: 40%;
+        margin-left: 150px; /* Adjust the width of the side image */
+        padding-bottom: 50px;
+        margin-top: 100px; /* Adjust the vertical position */
+      }
+      
+      .sp3 img {
+        width: 100%; /* Ensure the image takes the full width of its container */
+        border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+      }
+      
+
+      .let4{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        position: absolute;
+        margin-left: 280px;
+        padding-top: 0;
+        margin-top: 0;
+        width: 80%; 
+        height: 40vh;
+        
+        font-size: 12px;
+        opacity: 0;
+        animation: fadeInFromRight 1s ease-in-out forwards;
+      }
+      @keyframes fadeInFromRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px); /* Move in from the right */
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0); /* Reach its final position */
+      }
+      }
+      .par4{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        color:#333;
+        position: absolute;
+        padding-top: 10px;
+        margin-left: 300px;
+        margin-top: 3%;
+        width: 40%; 
+        height: 57vh;
+        font-size: 20px;
+        letter-spacing: 1px;
+        opacity: 0;
+        animation: fadeInFromRight 1s ease-in-out forwards;
+      }
+      
+      /* Add the following to your existing CSS file */
+      
+      .par4 .p4{
+      white-space: pre-line;
+      }
+      
+      .pi44{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "Raleway", sans-serif;
+      color:#424142;
+      position: absolute;
+      margin-left: 30px;
+      margin-top: 0;
+      padding-top: 0%;
+      width: 50%; 
+      height: 57vh;
+      font-size: 20px;
+      letter-spacing: 1px;
+      opacity: 0;
+      animation: fadeInFromRight 1s ease-in-out forwards;
+      }
+      
+      
+      .sp4 {
+        width: 30%;
+        margin-left: 100px;
+        padding-bottom: 500px;
+        margin-bottom: 10px;
+        animation: fadeInFromLeft 1s ease-in-out forwards;
+      }
+      
+      @keyframes fadeInFromLeft{
+        from {
+          opacity: 0;
+          transform: translateX(-20px); /* Move in from the right */
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0); /* Reach its final position */
+          }  }
+          .sp4{
+              width: 40%;
+              margin-left: 50%; /* Adjust the width of the side image */
+              padding-bottom: 50px;
+              margin-top: 100px; /* Adjust the vertical position */
+            }
+            
+            .sp4 img {
+              width: 100%; /* Ensure the image takes the full width of its container */
+              border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+            }
+ 
+
+            .let5{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              font-family: "Raleway", sans-serif;
+              position: absolute;
+              margin-left: 30%;
+              padding-top: 0;
+              margin-top: 0;
+              width: 80%; 
+              height: 40vh;
+              font-size: 12px;
+              opacity: 0;
+              animation: fadeInFromRight 1s ease-in-out forwards;
+            }
+            @keyframes fadeInFromRight {
+            from {
+              opacity: 0;
+              transform: translateX(20px); /* Move in from the right */
+            }
+            to {
+              opacity: 1;
+              transform: translateX(0); /* Reach its final position */
+            }
+            }
+            .par5{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              font-family: "Raleway", sans-serif;
+              color:#333;
+              position: absolute;
+              margin-left: 50%;
+              margin-top: 3%;
+              width: 40%; 
+              height: 57vh;
+              font-size: 20px;
+              letter-spacing: 1px;
+              opacity: 0;
+              animation: fadeInFromRight 1s ease-in-out forwards;
+            }
+            
+            /* Add the following to your existing CSS file */
+            
+            .par5 p5 {
+            white-space: pre-line;
+            }
+            
+            .pi55{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: "Raleway", sans-serif;
+            color:#424142;
+            position: absolute;
+            margin-left: 45%;
+            margin-top: 0;
+            padding-top: 0%;
+            width: 50%; 
+            height: 57vh;
+            font-size: 20px;
+            letter-spacing: 1px;
+            opacity: 0;
+            animation: fadeInFromRight 1s ease-in-out forwards;
+            }
+            
+            
+            .sp5 {
+              width: 30%;
+              margin-left: 100px;
+              padding-bottom: 500px;
+              
+              margin-bottom: 10px;
+              animation: fadeInFromLeft 1s ease-in-out forwards;
+            }
+            
+            @keyframes fadeInFromLeft{
+              from {
+                opacity: 0;
+                transform: translateX(-20px); /* Move in from the right */
+              }
+              to {
+                opacity: 1;
+                transform: translateX(0); /* Reach its final position */
+                }  }
+                .sp5 {
+                    width: 40%;
+                    margin-left: 150px; /* Adjust the width of the side image */
+                    padding-bottom: 50px;
+                    margin-top: 100px; /* Adjust the vertical position */
+                  }
+                  
+                  .sp5 img {
+                    width: 100%; /* Ensure the image takes the full width of its container */
+                    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+                  }
+                  
+ 
+  
+.let6{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  margin-left: 280px;
+  padding-top: 0;
+  margin-top: 0;
+  width: 80%; 
+  height: 40vh;
+  
+  font-size: 12px;
+  opacity: 0;
+  animation: fadeInFromRight 1s ease-in-out forwards;
+}
+@keyframes fadeInFromRight {
+from {
+  opacity: 0;
+  transform: translateX(20px); /* Move in from the right */
+}
+to {
+  opacity: 1;
+  transform: translateX(0); /* Reach its final position */
+}
+}
+.par6{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color:#333;
+  position: absolute;
+  padding-top: 10px;
+  margin-left: 300px;
+  margin-top: 3%;
+  width: 40%; 
+  height: 57vh;
+  font-size: 20px;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeInFromRight 1s ease-in-out forwards;
+}
+
+/* Add the following to your existing CSS file */
+
+.par6 .p6{
+white-space: pre-line;
+}
+
+.pi66{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-family: "Raleway", sans-serif;
+color:#424142;
+position: absolute;
+margin-left: 30px;
+margin-top: 0;
+padding-top: 0%;
+width: 50%; 
+height: 57vh;
+font-size: 20px;
+letter-spacing: 1px;
+opacity: 0;
+animation: fadeInFromRight 1s ease-in-out forwards;
+}
+
+
+.sp6 {
+  width: 30%;
+  margin-left: 100px;
+  padding-bottom: 500px;
+  margin-bottom: 10px;
+  animation: fadeInFromLeft 1s ease-in-out forwards;
+}
+
+@keyframes fadeInFromLeft{
+  from {
+    opacity: 0;
+    transform: translateX(-20px); /* Move in from the right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Reach its final position */
+    }  }
+    .sp6{
+        width: 40%;
+        margin-left: 50%; /* Adjust the width of the side image */
+        padding-bottom: 50px;
+        margin-top: 100px; /* Adjust the vertical position */
+      }
+      
+      .sp6 img {
+        width: 100%; /* Ensure the image takes the full width of its container */
+        border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+      }
+        
+      
+
+      .let7{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        position: absolute;
+        margin-left: 30%;
+        padding-top: 0;
+        margin-top: 0;
+        width: 80%; 
+        height: 40vh;
+        font-size: 12px;
+        opacity: 0;
+        animation: fadeInFromRight 1s ease-in-out forwards;
+      }
+      @keyframes fadeInFromRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px); /* Move in from the right */
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0); /* Reach its final position */
+      }
+      }
+      .par7{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        color:#333;
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 3%;
+        width: 40%; 
+        height: 57vh;
+        font-size: 20px;
+        letter-spacing: 1px;
+        opacity: 0;
+        animation: fadeInFromRight 1s ease-in-out forwards;
+      }
+      
+      /* Add the following to your existing CSS file */
+      
+      .par7 p7 {
+      white-space: pre-line;
+      }
+      
+      .pi77{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "Raleway", sans-serif;
+      color:#424142;
+      position: absolute;
+      margin-left: 45%;
+      margin-top: 0;
+      padding-top: 0%;
+      width: 50%; 
+      height: 57vh;
+      font-size: 20px;
+      letter-spacing: 1px;
+      opacity: 0;
+      animation: fadeInFromRight 1s ease-in-out forwards;
+      }
+      
+      
+      .sp7 {
+        width: 30%;
+        margin-left: 100px;
+        padding-bottom: 500px;
+        
+        margin-bottom: 10px;
+        animation: fadeInFromLeft 1s ease-in-out forwards;
+      }
+      
+      @keyframes fadeInFromLeft{
+        from {
+          opacity: 0;
+          transform: translateX(-20px); /* Move in from the right */
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0); /* Reach its final position */
+          }  }
+          .sp7 {
+              width: 40%;
+              margin-left: 150px; /* Adjust the width of the side image */
+              padding-bottom: 50px;
+              margin-top: 100px; /* Adjust the vertical position */
+            }
+            
+            .sp7 img {
+              width: 100%; /* Ensure the image takes the full width of its container */
+              border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+            }
+           
+.hi-text {
+  color: white;
+}
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.social-icon {
+  width: 40px; /* Adjust the width of the social icons */
+  height: 40px; /* Adjust the height of the social icons */
+  margin: 0 10px; /* Adjust the margin between social icons */
+}
+
+
+         

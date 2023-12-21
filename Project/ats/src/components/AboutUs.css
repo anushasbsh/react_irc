@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+
+.let{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    position: absolute;
+    margin-left: 30%;
+    width: 80%; 
+    height: 40vh;
+    font-size: 20px;
+    opacity: 0;
+    animation: fadeInFromRight 1s ease-in-out forwards;
+}
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px); /* Move in from the right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Reach its final position */
+  }
+}
+.par{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color:#310164;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 10%;
+    width: 40%; 
+    height: 57vh;
+    font-size: 20px;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeInFromRight 1s ease-in-out forwards;
+}
+
+/* Add the following to your existing CSS file */
+
+.par p {
+  white-space: pre-line;
+}
+
+.pi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color:#424142;
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 1%;
+  width: 50%; 
+  height: 57vh;
+  font-size: 20px;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeInFromRight 1s ease-in-out forwards;
+}
+
+.sp {
+  width: 30%;
+  margin-left: 100px;
+  padding-bottom: 500px;
+  margin-top: -700px;
+  margin-bottom: 60px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+    .sp {
+        width: 40%;
+        margin-left: 50px; /* Adjust the width of the side image */
+        padding-bottom: 50px;
+        margin-top: -780px; /* Adjust the vertical position */
+      }
+      
+      .sp img {
+        width: 100%; /* Ensure the image takes the full width of its container */
+        border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+      }
+      
+.tra{
+       font-family: "Raleway", sans-serif;
+       margin-left: 400px;
+       padding-top: 80px;
+       font-size: 21px;
+        opacity: 0;
+        animation: slideUp 0.1s ease-out;
+        animation-fill-mode: forwards;
+
+    }
+      
+.pra{
+       font-family: "Raleway", sans-serif;
+       margin-left: 320px;
+       padding-top: 0px;
+       font-size: 21px;
+       animation: slideUp 0.5s ease-out;
+       animation-fill-mode: forwards;
+       opacity: 0;
+    }
+    .pra {
+      animation-delay: 0.5s; /* Delay the animation to start after a short delay */
+    }     
+    
+    .tra {
+      animation-delay: 0.5s; /* Delay the animation to start after a short delay */
+    }     
+    
+    .praa {
+      animation-delay: 0.5s; /* Delay the animation to start after a short delay */
+    }     
+    
+    @keyframes slideUp {
+      from {
+        transform: translateY(50px); /* Adjust the initial Y translation */
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+
+.praa{
+       font-family: "Raleway", sans-serif;
+       margin-left: 320px;
+       padding-top: 0px;
+       font-size: 30px;
+       justify-content: space-between;
+       align-items: center;
+       margin-left: 8%;
+       animation: slideUp 0.5s ease-out;
+       animation-fill-mode: forwards;
+       opacity: 0;
+    }
+
+    .ssp img {
+      width: 80%; /* Ensure the image does not exceed its container's width */
+      height: 80%; /* Maintain the aspect ratio of the image */
+      border-radius: 10px;
+      margin-left: 9%;
+      
+    }
+
+    .customer-reviews {
+      display: flex;
+      animation: scrollAnimation 30s linear infinite; /* Adjust the duration as needed */
+      overflow: hidden;
+      width: calc(300px * 10); 
+    }
+    
+    
+.review-card {
+  min-width: 400px; /* Set a minimum width for each card */
+  padding-top:30px; /* Adjust padding for better spacing */
+  margin-right: 30px; /* Adjust the margin between cards */
+  border: 1px solid rgb(213, 210, 210);
+  border-radius: 8px;
+  background-color: white;
+  font-size: 18px; /* Adjust the font size */
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 0px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-family: "Raleway", sans-serif;
+  display: flex; /* Align items in a row */
+  align-items: center;
+  transition: box-shadow 0.3s ease; /* Smooth transition for box shadow */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.review-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+}
+.review-card h2 {
+  font-size: 24px; /* Adjust the font size for the heading */
+  margin-bottom: 10px;
+  margin-top: -1%; /* Add some spacing between heading and paragraph */
+}
+
+.review-card p {
+  font-size: 18px; /* Adjust the font size for the paragraph */
+  margin-bottom: 0; 
+  width: 80%;/* Remove default bottom margin for better spacing */
+}
+    /* Animation Keyframes */
+    @keyframes scrollAnimation {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-300px * 5)); /* Adjust the number of cards */
+      }
+    }
+
+    .profile-icon {
+      width: 60px; /* Adjust the size of the profile icon */
+      height: 60px;
+      margin-right: 10px; /* Adjust the spacing between the icon and text */
+      border-radius: 50%; /* Make the icon circular */
+    }
+
+    .review-content{
+      margin-top: 1px;
+      line-height: 25px;
+    }

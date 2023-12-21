@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+.app-bar-wrapper {
+  margin: 0;
+  padding: 0;
+    width: 100%;
+     
+  
+    /* Reset height */
+  }
+  .app-bar-wrapper .MuiAppBar-root {
+    background-color: #333;
+  }
+  .responsive-element {
+    /* Default styles for smaller screens or when no media query applies */
+    width: 100vw;
+    height: 100vh;
+ 
+    /* Media queries for different screen widths */
+    @media only screen and (min-width: 411px) {
+      width: 80vw;
+      height: 90vh;
+    }
+  
+    @media only screen and (min-width: 768px) {
+      width: 80vw;
+      height: 80vh;
+    }
+  
+    @media only screen and (min-width: 1024px) {
+      width: 70vw;
+      height: 50vh;
+    }
+  
+    @media only screen and (min-width: 1280px) {
+      width: 30vw;
+      height: 80vh;
+    }
+  }
+  
+  

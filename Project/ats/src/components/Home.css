@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+
+.letter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    position: absolute;
+    margin-left: 25%;
+    width: 80%; 
+    height: 40vh;
+    font-size: 20px;
+    opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color:#4c00b4;
+    position: absolute;
+    margin-left: 25%;
+    width: 80%; 
+    height: 57vh;
+    font-size: 20px;
+    letter-spacing: 1px;
+    opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    position: absolute;
+    margin-left: 27%;
+    width: 80%; 
+    height: 75vh;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color:#333;
+    font-weight: 500;
+    opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+.b {
+  display: flex;
+  gap: 30px;
+  margin: 40px auto;
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+  margin-top: 15px;
+  margin-left: 27%;
+  z-index: 1; /* Ensure the button is above the footer */
+}
+
+.b button {
+  background-color: #4c00b4;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: medium;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.b button:hover {
+  background-color: #fff;
+}
+
+.sidpic {
+  width: 30%;
+  margin-left: 100px;
+  padding-bottom: 500px;
+  margin-top: -1000px;
+  margin-bottom: 60px;
+  
+}
+
+.sidpic img {
+  width: 100%;
+  border-radius: 10px;
+}
+.b button:hover {
+    background-color: #fff; /* Change the background color on hover */
+  }
+
+  .p1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "Raleway", sans-serif;
+      position: absolute;
+      margin-left: 10%;
+      width: 80%; 
+      height: 165vh;
+      font-size: 25px;
+      letter-spacing: 1px;
+      margin-bottom: 100%;
+    }
+    
+    .pic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 1vh;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 20px; /* Add some margin to separate the image from other elements */
+      }
+
+  .pic img {
+      max-width: 100%; /* Ensure the image does not exceed its container's width */
+      height: auto; /* Maintain the aspect ratio of the image */
+      border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    }
+    
+    .sidpic {
+        width: 30%;
+        margin-left: 100px; /* Adjust the width of the side image */
+        padding-bottom: 100px;
+        margin-top: -790px; /* Adjust the vertical position */
+      }
+      
+      .sidpic img {
+        width: 100%; /* Ensure the image takes the full width of its container */
+        border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+      }
+      
+
+      @media only screen and (min-width: 600px) {
+        .letter,
+        .para,
+        .p,
+        .b {
+          margin-left: 25%;
+        }
+      
+        .sidpic {
+          width: 30%;
+          margin-left: 100px;
+        }
+      }
+      
+      /* Additional media queries for larger screens if needed */
+      @media only screen and (min-width: 900px) {
+        /* Add styles for larger screens if necessary */
+      }
+      

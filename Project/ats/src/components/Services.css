@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+
+.ca {
+    margin-top: 20px; /* Adjust the margin-top value as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .ca {
+   
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .ca .MuiCard-root {
+    width: 300px;
+    margin: 20px;
+    border-radius: 5%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .ca .MuiCard-root:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow on hover */
+  }
+
+  .xt{
+     color: #2d2d2e;
+    font-family: "Raleway", sans-serif;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    animation: fadeInFromRight 1s ease-in-out forwards;
+  }
+  
+  .txx{
+     color: #2d2d2e;
+    font-family: "Raleway", sans-serif;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    animation: fadeInFromLeft 1s ease-in-out forwards;
+  }
+  
+.ll{
+  font-size: 40px;
+}
+
+  .ii {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 1vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px; 
+    padding-top: 100px;/* Add some margin to separate the image from other elements */
+  }
+
+.ii img {
+  width: 150%; /* Ensure the image does not exceed its container's width */
+  height: 200px; /* Maintain the aspect ratio of the image */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+.hi{
+  padding-bottom:250px ;
+}
