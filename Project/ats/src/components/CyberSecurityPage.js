@@ -2,6 +2,7 @@
 import React from 'react';
 import cyspage from '../assets/cyspage.png';
 import './CyberSecurityPage.css';
+
 const CyberSecurityPage = () => {
   return (
     <div>
