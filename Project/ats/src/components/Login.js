@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Use useNavigate for React Router v6
+import { useNavigate } from 'react-router-dom'; 
 import './Login.css';
+
 import user_icon from '../assets/person.png';
 import email_icon from '../assets/email.png';
 import password_icon from '../assets/password.png';
 
 const Login = () => {
-  const navigate = useNavigate(); // useNavigate for React Router v6
+  const navigate = useNavigate(); 
   const [action, setAction] = useState("Login");
   const [formData, setFormData] = useState({
     username: "",
@@ -23,7 +24,7 @@ const Login = () => {
   };
 
   const handleFormSubmit = () => {
-    // Simple form validation
+    
     if (action === "Sign Up" && !formData.username.trim()) {
       alert("Please enter your name");
       return;
@@ -57,15 +58,18 @@ const Login = () => {
       alert("Password should be a minimum of 8 characters");
       return;
     }
-
-    // Show a success message
-    alert("Login Successful!");
-
-    // Redirect to the home page
-    navigate('/home'); // Update the route path accordingly
+    if (action === "Login") {
+      alert("Login Successful!");
+      navigate('/home'); 
+    } else if (action === "Sign Up") {
+      alert("User Registered Successfully");
+      navigate('/home'); 
+    }
   };
 
   return (
+    <div className='full'>
+    
     <div className='container'>
       <div className="header">
         <div className="text">{action}</div>
@@ -107,10 +111,10 @@ const Login = () => {
       {action === "Sign Up" ? <div></div> :
         <div className="forgot-password">Don't have an account? <span>Click Here!</span></div>}
       <div className="submit-container">
-        <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => { setAction("Sign Up") }}>Sign Up</div>
+        <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => { handleFormSubmit(); setAction("Sign Up") }}>Sign Up</div>
         <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => { handleFormSubmit(); setAction("Login") }}>Login</div>
       </div>
-    </div>
+    </div></div>
   );
 }
 
