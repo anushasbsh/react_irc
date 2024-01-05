@@ -898,5 +898,21 @@ animation: fadeInFromRight 1s ease-in-out forwards;
   margin: 0 10px; /* Adjust the margin between social icons */
 }
 
+.theme-toggle-button {
+  background: transparent;
+  border: none;
+  font-size: 24px; /* Adjust the font size as needed */
+  cursor: pointer;
+  outline: none; /* Remove the outline when button is focused */
+}
+
+/* Optional: Add styles for different states (hover, active) */
+.theme-toggle-button:hover {
+  transform: scale(1.1); /* Example: Increase size on hover */
+}
+
+.theme-toggle-button:active {
+  transform: scale(0.9); /* Example: Decrease size on click */
+}
 
          

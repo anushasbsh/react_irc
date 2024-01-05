@@ -9,9 +9,12 @@ import Login from "./components/Login";
 import Contact from "./components/Contact";
 import ServicesGrid from "./components/ServicesGrid"; // Update the path based on your file structure
 import Success from "./components/Success";
+
+import { ThemeProvider } from './components/ThemeContext.jsx';
 function App() {
   return (
-    <div className="page-container">
+    <ThemeProvider>
+         <div className="page-container">
       <div className="content-wrap">
         <ResponsiveAppBar />
         <Routes>
@@ -27,6 +30,8 @@ function App() {
       </div>
       <Footer />
     </div>
+    </ThemeProvider>
+ 
   );
 }
 

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Use useNavigate for React Router v6
 import './Login.css';
 import user_icon from '../assets/person.png';
 import email_icon from '../assets/email.png';
 import password_icon from '../assets/password.png';
 
 const Login = () => {
+  const navigate = useNavigate(); // useNavigate for React Router v6
   const [action, setAction] = useState("Login");
   const [formData, setFormData] = useState({
     username: "",
@@ -56,14 +58,11 @@ const Login = () => {
       return;
     }
 
-    // Simulate successful login
-    // In a real application, you would perform authentication here
-    // For now, let's assume it's successful
-
     // Show a success message
     alert("Login Successful!");
 
-    // Optionally, you can perform other actions here after successful login
+    // Redirect to the home page
+    navigate('/home'); // Update the route path accordingly
   };
 
   return (
@@ -75,7 +74,7 @@ const Login = () => {
       <div className="inputs">
         {action === "Login" ? <div></div> :
           <div className="input">
-            <img src={user_icon} alt="" />
+            <img src={user_icon} alt="User Icon" />
             <input
               type="text"
               id="username"
@@ -85,7 +84,7 @@ const Login = () => {
             />
           </div>}
         <div className="input">
-          <img src={email_icon} alt="" />
+          <img src={email_icon} alt="Email Icon" />
           <input
             type="email"
             id="email"
@@ -95,7 +94,7 @@ const Login = () => {
           />
         </div>
         <div className="input">
-          <img src={password_icon} alt="" />
+          <img src={password_icon} alt="Password Icon" />
           <input
             type="password"
             id="password"

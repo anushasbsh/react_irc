@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { useTheme } from './ThemeContext.jsx';
 import './Contact.css';
+import axios from 'axios';
 import contimg from '../assets/contactpic.png';
 import map from '../assets/map.png';
 import abt1 from '../assets/abt1.jpg';
@@ -18,7 +20,7 @@ import twitterIcon from '../assets/twitterIcon.png';
 import youtubeIcon from '../assets/youtubeIcon.png';
 const Contact = () => {
   const [isContacting, setContacting] = useState(false);
-
+  const { theme, toggleTheme } = useTheme();
   const socialMediaUrls = {
     instagram: 'https://www.instagram.com/',
     facebook: 'https://www.facebook.com/',
@@ -38,7 +40,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_mj34b88', 'template_8in0txp', form.current, 'F5gBsreBsnCjfREQu')
+    emailjs.sendForm('service_d7pcrlw', 'template_nk50vj2', form.current, '-P5e67dEqrvzc2xhV')
       .then((result) => {
           console.log(result.text);
           alert("Email Sent Successfully !")
@@ -49,6 +51,10 @@ const Contact = () => {
   };
 
   return (
+    <div style={{ background: theme === 'light' ? '#fff' : '#333', color: theme === 'light' ? '#333':'#fff'}}>
+   <button onClick={toggleTheme} className="theme-toggle-button">
+        {theme === 'light' ? '🌞' : '🌜'}
+      </button>
     <div className='main'>
       <div className='contimg'>
         <img src={contimg} alt=""></img>
@@ -215,7 +221,7 @@ const Contact = () => {
           <img src={youtubeIcon} alt="YouTube" className="social-icon" />
         </a>
       </div>
-    </div>
+    </div></div>
   );
 }
 

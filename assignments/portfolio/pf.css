@@ -45,9 +45,7 @@ section{
     cursor: pointer;
     font-size: 1.7rem;
 }
-.image{
-    top-right: 
-}
+
 
 .btn:hover{
     background:var(--pink);
@@ -112,9 +110,10 @@ header .fa-bars{
     display:flex;
     align-items: center;
     min-height: 100vh;
-    background:url(WhatsApp\ Image\ 2023-12-10\ at\ 12.20.17_d01b171c.jpg) no-repeat;
+    background:url(chrm_imgs.jpg) no-repeat;
     background-size:cover;
     background-position:center;
+    margin-top: 50px;
 }
 
 .home .content{
@@ -123,19 +122,19 @@ header .fa-bars{
 
 .home .content h3{
     font-size: 6rem;
-    color:#333;
+    color:#020202;
 }
 
 .home .content span{
     font-size: 3.5rem;
-    color:rgb(113, 11, 59);
+    color:rgb(229, 58, 138);
     padding:1rem 0;
     line-height: 1.5;
 }
 
 .home .content p{
     font-size: 1.5rem;
-    color:#333;
+    color:#020202;
     padding:1rem 0;
     line-height: 1.5;
 }
@@ -160,7 +159,7 @@ header .fa-bars{
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     height: 50px;
-    object: fit 1px;
+    object-fit: 1px;
 }
 
 .about .row .image-container h3{
@@ -225,13 +224,13 @@ header .fa-bars{
     font-size: 1.3rem;
 }
 
-.products .box-container{
+.skills .box-container{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
  }
 
- .products .box-container .box{
+ .skills .box-container .box{
     flex: 1 1 30rem;
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
     border-radius: .5rem;
@@ -239,7 +238,7 @@ header .fa-bars{
     position: relative;
 
  }
- .products .box-container .box .discount{
+ .skills .box-container .box .discount{
     position: absolute;
     top: 1rem; left: 1rem;
     padding: .7rem 1rem;
@@ -250,31 +249,31 @@ header .fa-bars{
     border-radius: .5rem;
  }
 
-.products .box-container .box .image{
+.skills .box-container .box .image{
     position: relative;
     text-align: center;
     padding-top: 2rem;
     overflow:hidden;
 }
 
-.products .box-container .box .image img{
+.skills .box-container .box .image img{
     height:25rem;
 }
 
-.products .box-container .box:hover .image img{
+.skills .box-container .box:hover .image img{
     transform:scale(1.1);
 }
-.products .box-container .box .image .icons{
-    positon: absolute;
+.skills .box-container .box .image .icons{
+    position: absolute;
     bottom:-7rem; left:0; right:0;
     display:flex;
 }
 
-.products .box-container .box:hover .image .icons {
+.skills .box-container .box:hover .image .icons {
     bottom:0;
 }
 
-.products .box-container .box .image .icons a{
+.skills .box-container .box .image .icons a{
     height: 5rem;
     line-height:5rem;
     font-size: 2rem;
@@ -283,34 +282,34 @@ header .fa-bars{
     color: #fff;
 }
 
-.products .box-container .box .image .icons .cart-btn{
+.skills .box-container .box .image .icons .cart-btn{
     border-left:.1rem solid #080707;
     border-right: .1rem solid rgba(9, 7, 7, 0.467);
     width:100%;
 }
 
-.products .box-container .box .image .icons a:hover{
+.skills .box-container .box .image .icons a:hover{
     background :#484646;
 }
 
-.products .box-container .box .content{
+.skills .box-container .box .content{
     padding:2rem;
     text-align: center;
 }
 
-.products .box-container .box .content h3{
+.skills .box-container .box .content h3{
     font-size: 2.5rem;
     color:#333;
 }
 
-.products .box-container .box .content .price{
+.skills .box-container .box .content .price{
     font-size: 2.5rem;
     color:var(--pink);
     font-weight: bolder;
     padding-top: 1rem;
 }
 
-.products .box-container .box .content .price span{
+.skills .box-container .box .content .price span{
     font-size: 1.5rem;
     color:#999;
     font-weight: lighter;
@@ -377,6 +376,69 @@ header .fa-bars{
 }
 
 
+#projects {
+    background-color: #fff; 
+    padding: 50px 0; 
+}
+
+#projects .heading {
+    color: #333;
+}
+
+#projects .content {
+    text-align: center;
+    font-size: 12px;
+}
+
+#projects h2 {
+    color: #333; 
+}
+
+#projects ul {
+    list-style:circle;
+    gap:3px;
+    padding-top: 25px;
+}
+
+#projects li {
+    margin-bottom: 10px;
+}
+
+#resume {
+    background-color: #fff;
+    padding: 50px 0; 
+}
+
+#resume .heading {
+    color: #333; 
+}
+
+#resume .content {
+    text-align: center;
+    font-size: 12px;
+}
+
+#resume h1 {
+    color: #333; 
+    margin-bottom: 20px;
+}
+
+#resume .btn {
+   
+    color: #fff; 
+    padding: 10px 20px; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+#resume .btn:hover {
+    background-color: var(--pink); 
+}
+
+
 .contact .row{
     display: flex;
     flex-wrap: wrap-reverse;
@@ -387,7 +449,7 @@ header .fa-bars{
 .contact .row form{
     flex:1 1 40rem;
     padding:2rem 2.5rem;
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+
     border:.1rem solid rgba(0,0,0,.1);
     background: #fff;
     border-radius: .5rem;
