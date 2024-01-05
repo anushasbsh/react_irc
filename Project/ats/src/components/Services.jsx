@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { Box, Card, CardContent, Typography, CardActions, Button, CardMedia } from '@mui/material';
 import './Services.css';
+import CyberSecurityPage from './CyberSecurityPage';
 
 export const Services = ({image, name, content}) => {
   return (
@@ -23,7 +25,9 @@ export const Services = ({image, name, content}) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">View Job</Button>
+      <Link to="/cybersecurity">
+                <Button size="small">View Job</Button>
+              </Link>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>

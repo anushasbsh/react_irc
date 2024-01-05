@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import Contact from "./components/Contact";
 import ServicesGrid from "./components/ServicesGrid"; // Update the path based on your file structure
 import Success from "./components/Success";
+import CyberSecurityPage from './components/CyberSecurityPage';
 
 import { ThemeProvider } from './components/ThemeContext.jsx';
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Page" element={<Page />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Success" element={<Success />} />
+          <Route path="/cybersecurity" element={<CyberSecurityPage />} />
         </Routes>
       </div>
       <Footer />
